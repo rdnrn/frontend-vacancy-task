@@ -1,0 +1,31 @@
+.token {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr repeat(5, 1fr);
+
+  &__id {
+    font-size: 1.125rem;
+  }
+
+  &__info {
+    display: flex;
+  }
+
+  &__logo-img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  &__price-change {
+    display: flex;
+  }
+
+  &__arrow-btn {
+    cursor: pointer;
+    align-self: start;
+    justify-self: start;
+  }
+
+  &__description {
+    grid-column: 1/-1;
+  }
+}

@@ -20,10 +20,10 @@ const TokenList: FC<ISelectedCategory> = ({ selectedCategory }) => {
     <div className="tokens">
       {filteredList.map((item) => (
         <TokenItem
-          key={item.symbol}
           id={item.id}
           name={item.name}
           description={item.description}
+          logoURI={item.logoURI}
           symbol={item.symbol}
           price={item.price}
           priceChange={item.priceChange}
