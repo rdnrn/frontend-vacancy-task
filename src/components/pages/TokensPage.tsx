@@ -6,8 +6,13 @@ const TokensPage: FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('')
   return (
     <div className="tokens-page">
-      <CategoriesList setSelectedCategory={setSelectedCategory} />
-      <TokenList selectedCategory={selectedCategory} />
+      <div className="m-b-header tokens-page__header">
+        <h1 className="heading-1">Токены Everscale</h1>
+        <CategoriesList setSelectedCategory={setSelectedCategory} />
+      </div>
+      <div className="tokens-page__content">
+        <TokenList selectedCategory={selectedCategory} />
+      </div>
     </div>
   )
 }

@@ -2,10 +2,10 @@
 
 // TOKEN PROPS
 interface TokenListProps {
-  key: string
   id: number
   name: string
   description: string
+  logoURI: string
   symbol: string
   price: number
   priceChange: IPriceChange

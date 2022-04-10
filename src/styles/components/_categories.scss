@@ -1,0 +1,23 @@
+.categories {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  color: $color-neutral-grey;
+  font-size: 0.8rem;
+  font-weight: 500;
+
+  &__name {
+    padding: 0.6rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: all 0.2s;
+
+    &.selected {
+      background: $linear-primary-gradient;
+      color: #fff;
+    }
+  }
+}

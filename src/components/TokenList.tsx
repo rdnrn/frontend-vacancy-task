@@ -4,7 +4,7 @@ import TokenItem from './TokenItem'
 
 const TokenList: FC<ISelectedCategory> = ({ selectedCategory }) => {
   const getFilteredList = () => {
-    if (!selectedCategory || selectedCategory === 'all') {
+    if (!selectedCategory || selectedCategory === 'Все') {
       return tokens
     }
     return tokens.filter((item) =>
@@ -20,10 +20,10 @@ const TokenList: FC<ISelectedCategory> = ({ selectedCategory }) => {
     <div className="tokens">
       {filteredList.map((item) => (
         <TokenItem
-          key={item.symbol}
           id={item.id}
           name={item.name}
           description={item.description}
+          logoURI={item.logoURI}
           symbol={item.symbol}
           price={item.price}
           priceChange={item.priceChange}

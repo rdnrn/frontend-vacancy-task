@@ -1,0 +1,11 @@
+.tokens-page {
+  padding: 4.1rem;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
