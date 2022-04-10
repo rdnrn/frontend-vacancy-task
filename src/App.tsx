@@ -10,7 +10,7 @@ const App: FC = () => {
     <div className="app">
       <Menu />
       <Routes>
-        <Route path="/tokens" element={<TokensPage />}></Route>
+        <Route path="/" element={<TokensPage />}></Route>
         <Route path="/search" element={<SearchPage />}></Route>
         <Route path="/token/:symbol" element={<TokenPage />}></Route>
       </Routes>

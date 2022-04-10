@@ -11,7 +11,7 @@ const Menu: FC = () => {
         <Logo />
       </div>
       <ul className="menu__list">
-        <NavLink className="menu__link" key="tokens" to="/tokens">
+        <NavLink className="menu__link" key="tokens" to="/">
           <li className="menu__list-item">
             <TokensIcon className="menu__svg-icon" />
             Токены
