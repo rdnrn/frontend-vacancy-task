@@ -1,7 +1,8 @@
 import { FC } from 'react'
-import { menu } from '../menu'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { ReactComponent as Logo } from '../img/Logo.svg'
+import { ReactComponent as TokensIcon } from '../img/tokens.svg'
+import { ReactComponent as SearchIcon } from '../img/search.svg'
 
 const Menu: FC = () => {
   return (
@@ -10,14 +11,18 @@ const Menu: FC = () => {
         <Logo />
       </div>
       <ul className="menu__list">
-        {menu.map((item) => (
-          <Link className="menu__link" key={item.id} to={`/${item.id}`}>
-            <li className="menu__list-item">
-              <img src={item.icon} alt="" />
-              {item.title}
-            </li>
-          </Link>
-        ))}
+        <NavLink className="menu__link" key="tokens" to="/tokens">
+          <li className="menu__list-item">
+            <TokensIcon className="menu__svg-icon" />
+            Токены
+          </li>
+        </NavLink>
+        <NavLink className="menu__link" key="search" to="/search">
+          <li className="menu__list-item">
+            <SearchIcon className="menu__svg-icon" />
+            Поиск
+          </li>
+        </NavLink>
       </ul>
       <div className="menu__language">Русский</div>
     </div>

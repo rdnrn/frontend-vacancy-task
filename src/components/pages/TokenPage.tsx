@@ -10,9 +10,18 @@ const TokenPage: FC = () => {
     return item.symbol === symbol
   })
 
-  console.log(tokenName)
-
-  return <div>{tokenName[0].name}</div>
+  return (
+    <div className="token-page">
+      <div className="m-b-header">
+        <h1 className="heading-1">{tokenName[0].name}</h1>
+      </div>
+      <div className="content">
+        <h2 className="heading-2">
+          Тестовое задание не предусматривает реализацию контента здесь
+        </h2>
+      </div>
+    </div>
+  )
 }
 
 export default TokenPage

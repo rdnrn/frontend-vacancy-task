@@ -1,7 +1,13 @@
 @import './base/base';
 @import './abstracts/variables';
+@import './utils/classes';
+
+@import './pages/search-page';
+@import './pages//tokens-page';
+@import './pages/token-page';
 
 @import './components/menu';
 
 @import './components/token-list';
 @import './components/token-item';
+@import './components/categories';

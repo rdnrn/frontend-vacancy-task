@@ -4,7 +4,7 @@ import TokenItem from './TokenItem'
 
 const TokenList: FC<ISelectedCategory> = ({ selectedCategory }) => {
   const getFilteredList = () => {
-    if (!selectedCategory || selectedCategory === 'all') {
+    if (!selectedCategory || selectedCategory === 'Все') {
       return tokens
     }
     return tokens.filter((item) =>
