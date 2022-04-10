@@ -1,5 +1,4 @@
-import React, { useState, FC } from 'react'
-import { tokens, categories } from './tokens'
+import { FC } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import TokensPage from './components/pages/TokensPage'
 import Menu from './components/Menu'
